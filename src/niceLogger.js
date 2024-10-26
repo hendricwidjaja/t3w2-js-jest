@@ -8,8 +8,19 @@ function sampleTest() {
 }
 
 function messageRepeater(messageToRepeat) {
-    // mesage repeater functionality
-    //stmts
+    // message repeater functionality
+    // stmts
+    if (Array.isArray(messageToRepeat)) {
+        // sth
+        return[...messageToRepeat, ...messageToRepeat, ...messageToRepeat,]
+    } else {
+        // return messageToRepeat.toString() + messageToRepeat.toString() + messageToRepeat.toString();
+
+        // or
+        let stringMessageToRepeat = messageToRepeat.toString();
+        return stringMessageToRepeat + stringMessageToRepeat + stringMessageToRepeat;
+    }
+
 }
 
 module.exports = {
