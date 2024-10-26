@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "test": "jest",
-    "testWatch": "jest --watch"
+    "testWatch": "jest --watch",
+    "testCoverage": "jest --coverage --watch"
   },
   "keywords": [],
   "author": "",
